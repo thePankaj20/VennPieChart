@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		23F056E621CA5079005B64BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F056E521CA5079005B64BC /* AppDelegate.swift */; };
+		23F056E821CA5079005B64BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F056E721CA5079005B64BC /* ViewController.swift */; };
+		23F056EB21CA5079005B64BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23F056E921CA5079005B64BC /* Main.storyboard */; };
+		23F056ED21CA507B005B64BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23F056EC21CA507B005B64BC /* Assets.xcassets */; };
+		23F056F021CA507B005B64BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23F056EE21CA507B005B64BC /* LaunchScreen.storyboard */; };
+		23F056FB21CA507B005B64BC /* VennPiChartWithTextDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F056FA21CA507B005B64BC /* VennPiChartWithTextDataTests.swift */; };
+		23F0570621CA507B005B64BC /* VennPiChartWithTextDataUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F0570521CA507B005B64BC /* VennPiChartWithTextDataUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		23F056F721CA507B005B64BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 23F056DA21CA5079005B64BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 23F056E121CA5079005B64BC;
+			remoteInfo = VennPiChartWithTextData;
+		};
+		23F0570221CA507B005B64BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 23F056DA21CA5079005B64BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 23F056E121CA5079005B64BC;
+			remoteInfo = VennPiChartWithTextData;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		23F056E221CA5079005B64BC /* VennPiChartWithTextData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VennPiChartWithTextData.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		23F056E521CA5079005B64BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		23F056E721CA5079005B64BC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		23F056EA21CA5079005B64BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		23F056EC21CA507B005B64BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		23F056EF21CA507B005B64BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		23F056F121CA507B005B64BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23F056F621CA507B005B64BC /* VennPiChartWithTextDataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VennPiChartWithTextDataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		23F056FA21CA507B005B64BC /* VennPiChartWithTextDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VennPiChartWithTextDataTests.swift; sourceTree = "<group>"; };
+		23F056FC21CA507B005B64BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23F0570121CA507B005B64BC /* VennPiChartWithTextDataUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VennPiChartWithTextDataUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		23F0570521CA507B005B64BC /* VennPiChartWithTextDataUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VennPiChartWithTextDataUITests.swift; sourceTree = "<group>"; };
+		23F0570721CA507B005B64BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		23F056DF21CA5079005B64BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23F056F321CA507B005B64BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23F056FE21CA507B005B64BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		23F056D921CA5079005B64BC = {
+			isa = PBXGroup;
+			children = (
+				23F056E421CA5079005B64BC /* VennPiChartWithTextData */,
+				23F056F921CA507B005B64BC /* VennPiChartWithTextDataTests */,
+				23F0570421CA507B005B64BC /* VennPiChartWithTextDataUITests */,
+				23F056E321CA5079005B64BC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		23F056E321CA5079005B64BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				23F056E221CA5079005B64BC /* VennPiChartWithTextData.app */,
+				23F056F621CA507B005B64BC /* VennPiChartWithTextDataTests.xctest */,
+				23F0570121CA507B005B64BC /* VennPiChartWithTextDataUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		23F056E421CA5079005B64BC /* VennPiChartWithTextData */ = {
+			isa = PBXGroup;
+			children = (
+				23F056E521CA5079005B64BC /* AppDelegate.swift */,
+				23F056E721CA5079005B64BC /* ViewController.swift */,
+				23F056E921CA5079005B64BC /* Main.storyboard */,
+				23F056EC21CA507B005B64BC /* Assets.xcassets */,
+				23F056EE21CA507B005B64BC /* LaunchScreen.storyboard */,
+				23F056F121CA507B005B64BC /* Info.plist */,
+			);
+			path = VennPiChartWithTextData;
+			sourceTree = "<group>";
+		};
+		23F056F921CA507B005B64BC /* VennPiChartWithTextDataTests */ = {
+			isa = PBXGroup;
+			children = (
+				23F056FA21CA507B005B64BC /* VennPiChartWithTextDataTests.swift */,
+				23F056FC21CA507B005B64BC /* Info.plist */,
+			);
+			path = VennPiChartWithTextDataTests;
+			sourceTree = "<group>";
+		};
+		23F0570421CA507B005B64BC /* VennPiChartWithTextDataUITests */ = {
+			isa = PBXGroup;
+			children = (
+				23F0570521CA507B005B64BC /* VennPiChartWithTextDataUITests.swift */,
+				23F0570721CA507B005B64BC /* Info.plist */,
+			);
+			path = VennPiChartWithTextDataUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		23F056E121CA5079005B64BC /* VennPiChartWithTextData */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23F0570A21CA507B005B64BC /* Build configuration list for PBXNativeTarget "VennPiChartWithTextData" */;
+			buildPhases = (
+				23F056DE21CA5079005B64BC /* Sources */,
+				23F056DF21CA5079005B64BC /* Frameworks */,
+				23F056E021CA5079005B64BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VennPiChartWithTextData;
+			productName = VennPiChartWithTextData;
+			productReference = 23F056E221CA5079005B64BC /* VennPiChartWithTextData.app */;
+			productType = "com.apple.product-type.application";
+		};
+		23F056F521CA507B005B64BC /* VennPiChartWithTextDataTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23F0570D21CA507B005B64BC /* Build configuration list for PBXNativeTarget "VennPiChartWithTextDataTests" */;
+			buildPhases = (
+				23F056F221CA507B005B64BC /* Sources */,
+				23F056F321CA507B005B64BC /* Frameworks */,
+				23F056F421CA507B005B64BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				23F056F821CA507B005B64BC /* PBXTargetDependency */,
+			);
+			name = VennPiChartWithTextDataTests;
+			productName = VennPiChartWithTextDataTests;
+			productReference = 23F056F621CA507B005B64BC /* VennPiChartWithTextDataTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		23F0570021CA507B005B64BC /* VennPiChartWithTextDataUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23F0571021CA507B005B64BC /* Build configuration list for PBXNativeTarget "VennPiChartWithTextDataUITests" */;
+			buildPhases = (
+				23F056FD21CA507B005B64BC /* Sources */,
+				23F056FE21CA507B005B64BC /* Frameworks */,
+				23F056FF21CA507B005B64BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				23F0570321CA507B005B64BC /* PBXTargetDependency */,
+			);
+			name = VennPiChartWithTextDataUITests;
+			productName = VennPiChartWithTextDataUITests;
+			productReference = 23F0570121CA507B005B64BC /* VennPiChartWithTextDataUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		23F056DA21CA5079005B64BC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Pankaj Kumhar";
+				TargetAttributes = {
+					23F056E121CA5079005B64BC = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					23F056F521CA507B005B64BC = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 23F056E121CA5079005B64BC;
+					};
+					23F0570021CA507B005B64BC = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 23F056E121CA5079005B64BC;
+					};
+				};
+			};
+			buildConfigurationList = 23F056DD21CA5079005B64BC /* Build configuration list for PBXProject "VennPiChartWithTextData" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 23F056D921CA5079005B64BC;
+			productRefGroup = 23F056E321CA5079005B64BC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				23F056E121CA5079005B64BC /* VennPiChartWithTextData */,
+				23F056F521CA507B005B64BC /* VennPiChartWithTextDataTests */,
+				23F0570021CA507B005B64BC /* VennPiChartWithTextDataUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		23F056E021CA5079005B64BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23F056F021CA507B005B64BC /* LaunchScreen.storyboard in Resources */,
+				23F056ED21CA507B005B64BC /* Assets.xcassets in Resources */,
+				23F056EB21CA5079005B64BC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23F056F421CA507B005B64BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23F056FF21CA507B005B64BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		23F056DE21CA5079005B64BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23F056E821CA5079005B64BC /* ViewController.swift in Sources */,
+				23F056E621CA5079005B64BC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23F056F221CA507B005B64BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23F056FB21CA507B005B64BC /* VennPiChartWithTextDataTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23F056FD21CA507B005B64BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23F0570621CA507B005B64BC /* VennPiChartWithTextDataUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		23F056F821CA507B005B64BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 23F056E121CA5079005B64BC /* VennPiChartWithTextData */;
+			targetProxy = 23F056F721CA507B005B64BC /* PBXContainerItemProxy */;
+		};
+		23F0570321CA507B005B64BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 23F056E121CA5079005B64BC /* VennPiChartWithTextData */;
+			targetProxy = 23F0570221CA507B005B64BC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		23F056E921CA5079005B64BC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				23F056EA21CA5079005B64BC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		23F056EE21CA507B005B64BC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				23F056EF21CA507B005B64BC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		23F0570821CA507B005B64BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		23F0570921CA507B005B64BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		23F0570B21CA507B005B64BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VennPiChartWithTextData/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.demoRipple.VennPiChartWithTextData;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		23F0570C21CA507B005B64BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VennPiChartWithTextData/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.demoRipple.VennPiChartWithTextData;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		23F0570E21CA507B005B64BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VennPiChartWithTextDataTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.demoRipple.VennPiChartWithTextDataTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VennPiChartWithTextData.app/VennPiChartWithTextData";
+			};
+			name = Debug;
+		};
+		23F0570F21CA507B005B64BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VennPiChartWithTextDataTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.demoRipple.VennPiChartWithTextDataTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VennPiChartWithTextData.app/VennPiChartWithTextData";
+			};
+			name = Release;
+		};
+		23F0571121CA507B005B64BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VennPiChartWithTextDataUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.demoRipple.VennPiChartWithTextDataUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VennPiChartWithTextData;
+			};
+			name = Debug;
+		};
+		23F0571221CA507B005B64BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VennPiChartWithTextDataUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.demoRipple.VennPiChartWithTextDataUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VennPiChartWithTextData;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		23F056DD21CA5079005B64BC /* Build configuration list for PBXProject "VennPiChartWithTextData" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23F0570821CA507B005B64BC /* Debug */,
+				23F0570921CA507B005B64BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23F0570A21CA507B005B64BC /* Build configuration list for PBXNativeTarget "VennPiChartWithTextData" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23F0570B21CA507B005B64BC /* Debug */,
+				23F0570C21CA507B005B64BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23F0570D21CA507B005B64BC /* Build configuration list for PBXNativeTarget "VennPiChartWithTextDataTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23F0570E21CA507B005B64BC /* Debug */,
+				23F0570F21CA507B005B64BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23F0571021CA507B005B64BC /* Build configuration list for PBXNativeTarget "VennPiChartWithTextDataUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23F0571121CA507B005B64BC /* Debug */,
+				23F0571221CA507B005B64BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 23F056DA21CA5079005B64BC /* Project object */;
+}
