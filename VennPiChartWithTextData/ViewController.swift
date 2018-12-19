@@ -76,7 +76,7 @@ class ViewController: UIViewController {
             drawCurvedString(on: layer, text: NSAttributedString(
                 string: isClockWise ? "Clockwise Text \(i)" :  "Anticlockwise Text \(i)", //"Layer custom layer \(i)",
                 attributes: [
-                    NSAttributedString.Key.foregroundColor: UIColor.black,
+                    NSAttributedString.Key.foregroundColor: UIColor.white,
                     NSAttributedString.Key.font: UIFont.systemFont(ofSize: (((plottingViwe.frame.size.height / 2) - 60) / CGFloat(count + 1)/2))
                 ]), angle: isClockWise ? CGFloat(-((Double(8))/3.0 * 2.5) + 0.50) : CGFloat(-((Double(83.5))/3.0 * 2.5) + 0.50), radius: circleRadius, plottingViwe: plottingViwe, isCloclWise: isClockWise)// - CGFloat(value1) - 1)
             dynamicRadious = dynamicRadious + ((plottingViwe.frame.size.height / 2) - 60) / CGFloat(count + 1)
