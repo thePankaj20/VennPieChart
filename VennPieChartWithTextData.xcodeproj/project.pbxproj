@@ -14,6 +14,7 @@
 		23F056F021CA507B005B64BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23F056EE21CA507B005B64BC /* LaunchScreen.storyboard */; };
 		23F056FB21CA507B005B64BC /* VennPiChartWithTextDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F056FA21CA507B005B64BC /* VennPiChartWithTextDataTests.swift */; };
 		23F0570621CA507B005B64BC /* VennPiChartWithTextDataUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F0570521CA507B005B64BC /* VennPiChartWithTextDataUITests.swift */; };
+		23F0571A21CA54C3005B64BC /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 23F0571921CA54C3005B64BC /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,19 +35,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		23F056E221CA5079005B64BC /* VennPiChartWithTextData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VennPiChartWithTextData.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		23F056E221CA5079005B64BC /* VennPieChartWithTextData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VennPieChartWithTextData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23F056E521CA5079005B64BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23F056E721CA5079005B64BC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		23F056EA21CA5079005B64BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		23F056EC21CA507B005B64BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		23F056EF21CA507B005B64BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		23F056F121CA507B005B64BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		23F056F621CA507B005B64BC /* VennPiChartWithTextDataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VennPiChartWithTextDataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		23F056F621CA507B005B64BC /* VennPieChartWithTextDataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VennPieChartWithTextDataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		23F056FA21CA507B005B64BC /* VennPiChartWithTextDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VennPiChartWithTextDataTests.swift; sourceTree = "<group>"; };
 		23F056FC21CA507B005B64BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		23F0570121CA507B005B64BC /* VennPiChartWithTextDataUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VennPiChartWithTextDataUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		23F0570121CA507B005B64BC /* VennPieChartWithTextDataUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VennPieChartWithTextDataUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		23F0570521CA507B005B64BC /* VennPiChartWithTextDataUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VennPiChartWithTextDataUITests.swift; sourceTree = "<group>"; };
 		23F0570721CA507B005B64BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23F0571921CA54C3005B64BC /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,9 +89,9 @@
 		23F056E321CA5079005B64BC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				23F056E221CA5079005B64BC /* VennPiChartWithTextData.app */,
-				23F056F621CA507B005B64BC /* VennPiChartWithTextDataTests.xctest */,
-				23F0570121CA507B005B64BC /* VennPiChartWithTextDataUITests.xctest */,
+				23F056E221CA5079005B64BC /* VennPieChartWithTextData.app */,
+				23F056F621CA507B005B64BC /* VennPieChartWithTextDataTests.xctest */,
+				23F0570121CA507B005B64BC /* VennPieChartWithTextDataUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -97,6 +99,7 @@
 		23F056E421CA5079005B64BC /* VennPiChartWithTextData */ = {
 			isa = PBXGroup;
 			children = (
+				23F0571921CA54C3005B64BC /* .gitignore */,
 				23F056E521CA5079005B64BC /* AppDelegate.swift */,
 				23F056E721CA5079005B64BC /* ViewController.swift */,
 				23F056E921CA5079005B64BC /* Main.storyboard */,
@@ -128,9 +131,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		23F056E121CA5079005B64BC /* VennPiChartWithTextData */ = {
+		23F056E121CA5079005B64BC /* VennPieChartWithTextData */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 23F0570A21CA507B005B64BC /* Build configuration list for PBXNativeTarget "VennPiChartWithTextData" */;
+			buildConfigurationList = 23F0570A21CA507B005B64BC /* Build configuration list for PBXNativeTarget "VennPieChartWithTextData" */;
 			buildPhases = (
 				23F056DE21CA5079005B64BC /* Sources */,
 				23F056DF21CA5079005B64BC /* Frameworks */,
@@ -140,14 +143,14 @@
 			);
 			dependencies = (
 			);
-			name = VennPiChartWithTextData;
+			name = VennPieChartWithTextData;
 			productName = VennPiChartWithTextData;
-			productReference = 23F056E221CA5079005B64BC /* VennPiChartWithTextData.app */;
+			productReference = 23F056E221CA5079005B64BC /* VennPieChartWithTextData.app */;
 			productType = "com.apple.product-type.application";
 		};
-		23F056F521CA507B005B64BC /* VennPiChartWithTextDataTests */ = {
+		23F056F521CA507B005B64BC /* VennPieChartWithTextDataTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 23F0570D21CA507B005B64BC /* Build configuration list for PBXNativeTarget "VennPiChartWithTextDataTests" */;
+			buildConfigurationList = 23F0570D21CA507B005B64BC /* Build configuration list for PBXNativeTarget "VennPieChartWithTextDataTests" */;
 			buildPhases = (
 				23F056F221CA507B005B64BC /* Sources */,
 				23F056F321CA507B005B64BC /* Frameworks */,
@@ -158,14 +161,14 @@
 			dependencies = (
 				23F056F821CA507B005B64BC /* PBXTargetDependency */,
 			);
-			name = VennPiChartWithTextDataTests;
+			name = VennPieChartWithTextDataTests;
 			productName = VennPiChartWithTextDataTests;
-			productReference = 23F056F621CA507B005B64BC /* VennPiChartWithTextDataTests.xctest */;
+			productReference = 23F056F621CA507B005B64BC /* VennPieChartWithTextDataTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		23F0570021CA507B005B64BC /* VennPiChartWithTextDataUITests */ = {
+		23F0570021CA507B005B64BC /* VennPieChartWithTextDataUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 23F0571021CA507B005B64BC /* Build configuration list for PBXNativeTarget "VennPiChartWithTextDataUITests" */;
+			buildConfigurationList = 23F0571021CA507B005B64BC /* Build configuration list for PBXNativeTarget "VennPieChartWithTextDataUITests" */;
 			buildPhases = (
 				23F056FD21CA507B005B64BC /* Sources */,
 				23F056FE21CA507B005B64BC /* Frameworks */,
@@ -176,9 +179,9 @@
 			dependencies = (
 				23F0570321CA507B005B64BC /* PBXTargetDependency */,
 			);
-			name = VennPiChartWithTextDataUITests;
+			name = VennPieChartWithTextDataUITests;
 			productName = VennPiChartWithTextDataUITests;
-			productReference = 23F0570121CA507B005B64BC /* VennPiChartWithTextDataUITests.xctest */;
+			productReference = 23F0570121CA507B005B64BC /* VennPieChartWithTextDataUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -204,7 +207,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 23F056DD21CA5079005B64BC /* Build configuration list for PBXProject "VennPiChartWithTextData" */;
+			buildConfigurationList = 23F056DD21CA5079005B64BC /* Build configuration list for PBXProject "VennPieChartWithTextData" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -217,9 +220,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				23F056E121CA5079005B64BC /* VennPiChartWithTextData */,
-				23F056F521CA507B005B64BC /* VennPiChartWithTextDataTests */,
-				23F0570021CA507B005B64BC /* VennPiChartWithTextDataUITests */,
+				23F056E121CA5079005B64BC /* VennPieChartWithTextData */,
+				23F056F521CA507B005B64BC /* VennPieChartWithTextDataTests */,
+				23F0570021CA507B005B64BC /* VennPieChartWithTextDataUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -229,6 +232,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23F0571A21CA54C3005B64BC /* .gitignore in Resources */,
 				23F056F021CA507B005B64BC /* LaunchScreen.storyboard in Resources */,
 				23F056ED21CA507B005B64BC /* Assets.xcassets in Resources */,
 				23F056EB21CA5079005B64BC /* Main.storyboard in Resources */,
@@ -282,12 +286,12 @@
 /* Begin PBXTargetDependency section */
 		23F056F821CA507B005B64BC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 23F056E121CA5079005B64BC /* VennPiChartWithTextData */;
+			target = 23F056E121CA5079005B64BC /* VennPieChartWithTextData */;
 			targetProxy = 23F056F721CA507B005B64BC /* PBXContainerItemProxy */;
 		};
 		23F0570321CA507B005B64BC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 23F056E121CA5079005B64BC /* VennPiChartWithTextData */;
+			target = 23F056E121CA5079005B64BC /* VennPieChartWithTextData */;
 			targetProxy = 23F0570221CA507B005B64BC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -438,7 +442,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.demoRipple.VennPiChartWithTextData;
+				PRODUCT_BUNDLE_IDENTIFIER = com.VennPiChartWithTextData;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -455,7 +459,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.demoRipple.VennPiChartWithTextData;
+				PRODUCT_BUNDLE_IDENTIFIER = com.VennPiChartWithTextData;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -478,7 +482,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VennPiChartWithTextData.app/VennPiChartWithTextData";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VennPieChartWithTextData.app/VennPieChartWithTextData";
 			};
 			name = Debug;
 		};
@@ -498,7 +502,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VennPiChartWithTextData.app/VennPiChartWithTextData";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VennPieChartWithTextData.app/VennPieChartWithTextData";
 			};
 			name = Release;
 		};
@@ -543,7 +547,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		23F056DD21CA5079005B64BC /* Build configuration list for PBXProject "VennPiChartWithTextData" */ = {
+		23F056DD21CA5079005B64BC /* Build configuration list for PBXProject "VennPieChartWithTextData" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				23F0570821CA507B005B64BC /* Debug */,
@@ -552,7 +556,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		23F0570A21CA507B005B64BC /* Build configuration list for PBXNativeTarget "VennPiChartWithTextData" */ = {
+		23F0570A21CA507B005B64BC /* Build configuration list for PBXNativeTarget "VennPieChartWithTextData" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				23F0570B21CA507B005B64BC /* Debug */,
@@ -561,7 +565,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		23F0570D21CA507B005B64BC /* Build configuration list for PBXNativeTarget "VennPiChartWithTextDataTests" */ = {
+		23F0570D21CA507B005B64BC /* Build configuration list for PBXNativeTarget "VennPieChartWithTextDataTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				23F0570E21CA507B005B64BC /* Debug */,
@@ -570,7 +574,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		23F0571021CA507B005B64BC /* Build configuration list for PBXNativeTarget "VennPiChartWithTextDataUITests" */ = {
+		23F0571021CA507B005B64BC /* Build configuration list for PBXNativeTarget "VennPieChartWithTextDataUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				23F0571121CA507B005B64BC /* Debug */,
