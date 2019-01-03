@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		23079AF321DC8E7D00B68BEA /* VennPieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23079AF221DC8E7D00B68BEA /* VennPieChartView.swift */; };
 		23F056E621CA5079005B64BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F056E521CA5079005B64BC /* AppDelegate.swift */; };
 		23F056E821CA5079005B64BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F056E721CA5079005B64BC /* ViewController.swift */; };
 		23F056EB21CA5079005B64BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23F056E921CA5079005B64BC /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		23079AF221DC8E7D00B68BEA /* VennPieChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VennPieChartView.swift; sourceTree = "<group>"; };
 		23F056E221CA5079005B64BC /* VennPieChartWithTextData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VennPieChartWithTextData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23F056E521CA5079005B64BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23F056E721CA5079005B64BC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				23F056EC21CA507B005B64BC /* Assets.xcassets */,
 				23F056EE21CA507B005B64BC /* LaunchScreen.storyboard */,
 				23F056F121CA507B005B64BC /* Info.plist */,
+				23079AF221DC8E7D00B68BEA /* VennPieChartView.swift */,
 			);
 			path = VennPiChartWithTextData;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23079AF321DC8E7D00B68BEA /* VennPieChartView.swift in Sources */,
 				23F056E821CA5079005B64BC /* ViewController.swift in Sources */,
 				23F056E621CA5079005B64BC /* AppDelegate.swift in Sources */,
 			);
