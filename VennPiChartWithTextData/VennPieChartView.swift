@@ -23,14 +23,18 @@ class VennPieChartView: UIView {
             positiveNumbers = newValue
         }
     }
+    
     @IBInspectable var positiveArcColor: UIColor? {
         get {
-            return UIColor(cgColor: positiveColor as! CGColor)
+            return UIColor(cgColor: positiveColor.cgColor)
         }
         set {
-            positiveColor = newValue as! UIColor
+            if let newValue = newValue {
+                positiveColor = newValue
+            }
         }
     }
+    
     @IBInspectable var numberOfNegativeValues: Int {
         get {
             return negativeNumbers
@@ -41,16 +45,19 @@ class VennPieChartView: UIView {
     }
     @IBInspectable var negativeArcColor: UIColor? {
         get {
-            return UIColor(cgColor: negativeColor as! CGColor)
+            return UIColor(cgColor: negativeColor.cgColor)
         }
         set {
-            negativeColor = newValue as! UIColor
+            if let newValue = newValue {
+                negativeColor = newValue
+            }
         }
     }
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
     }
+    
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
@@ -58,14 +65,13 @@ class VennPieChartView: UIView {
     override func awakeFromNib() {
         super.awakeFromNib()
         DispatchQueue.main.async {
-            self.drawArcWithParams(plottingViwe: self, count: self.positiveNumbers-1, isClockWise: true)
-            self.drawArcWithParams(plottingViwe: self, count: self.negativeNumbers-1, isClockWise: false)
+            self.drawArcWithParams(plottingView: self, count: self.positiveNumbers-1, isClockWise: true)
+            self.drawArcWithParams(plottingView: self, count: self.negativeNumbers-1, isClockWise: false)
         }
-        
     }
     
     //Drawing number Arc in given View clockwise or anticlockwise
-    func drawArcWithParams(plottingViwe: UIView, count: Int, isClockWise: Bool) {
+    func drawArcWithParams(plottingView: UIView, count: Int, isClockWise: Bool) {
         var dynamicRadious:CGFloat = 0.0
         var value = 9
         var greenValue = 105.0
@@ -75,22 +81,28 @@ class VennPieChartView: UIView {
         
         for _ in 0...count{
             //Drawing unfilled Arcs
-            let center = CGPoint (x: plottingViwe.frame.size.width / 2, y: plottingViwe.frame.size.height / 2)
-            let circleRadius = 60 + dynamicRadious + (((plottingViwe.frame.size.width / 2) - 60) / CGFloat(count + 1) / 2)
-            let circlePathEmpty = UIBezierPath(arcCenter: center, radius: circleRadius, startAngle: CGFloat(Double.pi), endAngle: 0.0, clockwise: isClockWise)
+            let center = CGPoint (x: plottingView.frame.size.width / 2,
+                                  y: plottingView.frame.size.height / 2)
             
-            let semiCircleLayerEmpty   = CAShapeLayer()
+            let circleRadius = 60 + dynamicRadious + (((plottingView.frame.size.width / 2) - 60) / CGFloat(count + 1) / 2)
+            
+            let circlePathEmpty = UIBezierPath(arcCenter: center, radius: circleRadius,
+                                               startAngle: CGFloat(Double.pi),
+                                               endAngle: .zero,
+                                               clockwise: isClockWise)
+            
+            let semiCircleLayerEmpty = CAShapeLayer()
             semiCircleLayerEmpty.path = circlePathEmpty.cgPath
             blueValue = blueValue - 3
             semiCircleLayerEmpty.strokeColor = UIColor.init(red: 34.0/255.0, green: CGFloat(blueValue/255.0), blue: 71.0/255.0, alpha: 1.0).cgColor
             semiCircleLayerEmpty.fillColor = UIColor.clear.cgColor
-            semiCircleLayerEmpty.lineWidth = ((plottingViwe.frame.size.width / 2) - 60) / CGFloat(count + 1) //count > 9 ? (count + 1) : 9
+            semiCircleLayerEmpty.lineWidth = ((plottingView.frame.size.width / 2) - 60) / CGFloat(count + 1)
             semiCircleLayerEmpty.strokeStart = 0
             semiCircleLayerEmpty.strokeEnd  = 1
-            plottingViwe.layer.addSublayer(semiCircleLayerEmpty)
+            plottingView.layer.addSublayer(semiCircleLayerEmpty)
             
             
-            //Drawing Filled Arcs with given value
+            // Drawing Filled Arcs with given value
             value -= 1
             let circlePath = UIBezierPath(arcCenter: center, radius: circleRadius, startAngle:CGFloat(Double.pi), endAngle: isClockWise ? CGFloat(-((Double(value))/3.0)) : CGFloat(((Double(value))/3.0)), clockwise: isClockWise)
             
@@ -98,36 +110,35 @@ class VennPieChartView: UIView {
             semiCircleLayer.path = circlePath.cgPath
             greenValue = greenValue + 15.0
             redValue = redValue + 25.0
-            semiCircleLayer.strokeColor = isClockWise ? UIColor.init(red: 48.0/255.0, green: CGFloat(greenValue/255.0), blue: 83.0/255.0, alpha: 1.0).cgColor : UIColor.init(red: CGFloat(redValue/255.0) , green: 35.0/255.0, blue: 25.0/255.0, alpha: 1.0).cgColor
+            semiCircleLayer.strokeColor = isClockWise ? UIColor(red: 48.0/255.0, green: CGFloat(greenValue/255.0), blue: 83.0/255.0, alpha: 1.0).cgColor : UIColor(red: CGFloat(redValue/255.0), green: 35.0/255.0, blue: 25.0/255.0, alpha: 1.0).cgColor
             semiCircleLayer.fillColor = UIColor.clear.cgColor
-            semiCircleLayer.lineWidth = ((plottingViwe.frame.size.width / 2) - 60) / CGFloat(count + 1) //12
-            dynamicRadious = dynamicRadious + ((plottingViwe.frame.size.width / 2) - 60) / CGFloat(count + 1) //12
+            semiCircleLayer.lineWidth = ((plottingView.frame.size.width / 2) - 60) / CGFloat(count + 1) //12
+            dynamicRadious = dynamicRadious + ((plottingView.frame.size.width / 2) - 60) / CGFloat(count + 1) //12
             semiCircleLayer.strokeStart = 0
             semiCircleLayer.strokeEnd  = 1
             
-            //Saving layers in array to show text value
+            // Saving layers in array to show text value
             arrLayers.append(semiCircleLayer)
-            plottingViwe.layer.addSublayer(semiCircleLayer)
+            plottingView.layer.addSublayer(semiCircleLayer)
         }
         
-        //Writing circular text along with Drawn Arc
+        // Writing circular text along with Drawn Arc
         var i = 0
         dynamicRadious = 0.0
         for layer in arrLayers{
-            let circleRadius = 60 + dynamicRadious + (((plottingViwe.frame.size.height / 2) - 60) / CGFloat(count + 1) / 2)
+            let circleRadius = 60 + dynamicRadious + (((plottingView.frame.size.height / 2) - 60) / CGFloat(count + 1) / 2)
             drawCurvedString(on: layer, text: NSAttributedString(
-                string: isClockWise ? "Clockwise Text \(i)" :  "Anticlockwise Text \(i)", //"Layer custom layer \(i)",
+                string: isClockWise ? "Clockwise Text \(i)" :  "Anticlockwise Text \(i)",
                 attributes: [
                     NSAttributedString.Key.foregroundColor: UIColor.white,
-                    NSAttributedString.Key.font: UIFont.systemFont(ofSize: (((plottingViwe.frame.size.height / 2) - 60) / CGFloat(count + 1)/2))
-                ]), angle: isClockWise ? CGFloat(-((Double(8))/3.0 * 2.5) + 0.50) : CGFloat(-((Double(83.5))/3.0 * 2.5) + 0.50), radius: circleRadius, plottingViwe: plottingViwe, isCloclWise: isClockWise)// - CGFloat(value1) - 1)
-            dynamicRadious = dynamicRadious + ((plottingViwe.frame.size.height / 2) - 60) / CGFloat(count + 1)
+                    NSAttributedString.Key.font: UIFont.systemFont(ofSize: (((plottingView.frame.size.height / 2) - 60) / CGFloat(count + 1)/2))
+                ]), angle: isClockWise ? CGFloat(-((Double(8))/3.0 * 2.5) + 0.50) : CGFloat(-((Double(83.5))/3.0 * 2.5) + 0.50), radius: circleRadius, plottingViwe: plottingView, isClockwise: isClockWise)
+            dynamicRadious = dynamicRadious + ((plottingView.frame.size.height / 2) - 60) / CGFloat(count + 1)
             i += 1
         }
-        
     }
     
-    func drawCurvedString(on layer: CALayer, text: NSAttributedString, angle: CGFloat, radius: CGFloat, plottingViwe: UIView, isCloclWise: Bool) {
+    func drawCurvedString(on layer: CALayer, text: NSAttributedString, angle: CGFloat, radius: CGFloat, plottingViwe: UIView, isClockwise: Bool) {
         var radAngle = angle.radians
         
         let perimeter: CGFloat = 2 * .pi * radius
@@ -139,12 +150,12 @@ class VennPieChartView: UIView {
             // bottom string
             textRotation = 0.5 * .pi
             textDirection = -2 * .pi
-            radAngle = isCloclWise ? angle/2 : -angle/2 //textAngle / 2
+            radAngle = isClockwise ? angle/2 : -angle/2 //textAngle / 2
         } else {
             // top string
-            textRotation = CGFloat(isCloclWise ? (1.5 * .pi) : (1.5 * -.pi))
-            textDirection = CGFloat(isCloclWise ? 2.0 * .pi : 2.0 * -.pi)
-            radAngle = isCloclWise ? angle/2 : -angle/2 //textAngle / 2
+            textRotation = CGFloat(isClockwise ? (1.5 * .pi) : (1.5 * -.pi))
+            textDirection = CGFloat(isClockwise ? 2.0 * .pi : 2.0 * -.pi)
+            radAngle = isClockwise ? angle/2 : -angle/2 //textAngle / 2
         }
         
         for c in 0..<text.length {
@@ -183,5 +194,4 @@ class VennPieChartView: UIView {
         textLayer.contentsScale = UIScreen.main.scale
         return textLayer
     }
-
 }
