@@ -16,6 +16,7 @@
 		23F056FB21CA507B005B64BC /* VennPiChartWithTextDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F056FA21CA507B005B64BC /* VennPiChartWithTextDataTests.swift */; };
 		23F0570621CA507B005B64BC /* VennPiChartWithTextDataUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F0570521CA507B005B64BC /* VennPiChartWithTextDataUITests.swift */; };
 		23F0571A21CA54C3005B64BC /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 23F0571921CA54C3005B64BC /* .gitignore */; };
+		2954F231269DE1C0002CB0C5 /* VennPiechart.png in Resources */ = {isa = PBXBuildFile; fileRef = 2954F230269DE1C0002CB0C5 /* VennPiechart.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		23F0570521CA507B005B64BC /* VennPiChartWithTextDataUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VennPiChartWithTextDataUITests.swift; sourceTree = "<group>"; };
 		23F0570721CA507B005B64BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		23F0571921CA54C3005B64BC /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		2954F230269DE1C0002CB0C5 /* VennPiechart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = VennPiechart.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		23F056E421CA5079005B64BC /* VennPiChartWithTextData */ = {
 			isa = PBXGroup;
 			children = (
+				2954F230269DE1C0002CB0C5 /* VennPiechart.png */,
 				23F0571921CA54C3005B64BC /* .gitignore */,
 				23F056E521CA5079005B64BC /* AppDelegate.swift */,
 				23F056E721CA5079005B64BC /* ViewController.swift */,
@@ -236,6 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				23F0571A21CA54C3005B64BC /* .gitignore in Resources */,
+				2954F231269DE1C0002CB0C5 /* VennPiechart.png in Resources */,
 				23F056F021CA507B005B64BC /* LaunchScreen.storyboard in Resources */,
 				23F056ED21CA507B005B64BC /* Assets.xcassets in Resources */,
 				23F056EB21CA5079005B64BC /* Main.storyboard in Resources */,
