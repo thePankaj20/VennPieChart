@@ -187,3 +187,15 @@ public class VennPieChartView: UIView {
         return textLayer
     }
 }
+
+extension CGFloat {
+    /** Degrees to Radian **/
+    var degrees: CGFloat {
+        return self * (180.0 / .pi)
+    }
+    
+    /** Radians to Degrees **/
+    var radians: CGFloat {
+        return self / 180.0 * .pi
+    }
+}
