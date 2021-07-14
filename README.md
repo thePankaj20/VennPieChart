@@ -1,4 +1,10 @@
 # VennPieChart
-Venn Pie chart with number of inputs which are segregated in two parts(upper half and lower half).
 
-![alt text](https://github.com/NilaakashSingh/VennPieChart/blob/master/VennPiChartWithTextData/VennPiechart.png)
+Venn Pie chart with tilt texts
+
+## Screenshot
+
+![alt text](https://github.com/NilaakashSingh/VennPieChart/blob/master/VennPiechart.png)
+
+## How to use
+Updating soon ...

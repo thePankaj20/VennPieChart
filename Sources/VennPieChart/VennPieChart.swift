@@ -1,21 +1,13 @@
-//
-//  VennPieChartView.swift
-//  VennPieChartWithTextData
-//
-//  Created by Pankaj Kumhar on 1/2/19.
-//  Copyright © 2019 Pankaj Kumhar. All rights reserved.
-//
-
 import UIKit
 
-class VennPieChartView: UIView {
+public class VennPieChartView: UIView {
     
-    var positiveNumbers = 0
-    var positiveColor = UIColor.green
-    var negativeNumbers = 0
-    var negativeColor = UIColor.red
+    public var positiveNumbers = 0
+    public var positiveColor = UIColor.green
+    public var negativeNumbers = 0
+    public var negativeColor = UIColor.red
     
-    @IBInspectable var numberOfPositiveValues: Int {
+    @IBInspectable public var numberOfPositiveValues: Int {
         get {
             return positiveNumbers
         }
@@ -24,7 +16,7 @@ class VennPieChartView: UIView {
         }
     }
     
-    @IBInspectable var positiveArcColor: UIColor? {
+    @IBInspectable public var positiveArcColor: UIColor? {
         get {
             return UIColor(cgColor: positiveColor.cgColor)
         }
@@ -35,7 +27,7 @@ class VennPieChartView: UIView {
         }
     }
     
-    @IBInspectable var numberOfNegativeValues: Int {
+    @IBInspectable public var numberOfNegativeValues: Int {
         get {
             return negativeNumbers
         }
@@ -43,7 +35,7 @@ class VennPieChartView: UIView {
             negativeNumbers = newValue
         }
     }
-    @IBInspectable var negativeArcColor: UIColor? {
+    @IBInspectable public var negativeArcColor: UIColor? {
         get {
             return UIColor(cgColor: negativeColor.cgColor)
         }
@@ -62,7 +54,7 @@ class VennPieChartView: UIView {
         super.init(coder: aDecoder)
     }
     
-    override func awakeFromNib() {
+    public override func awakeFromNib() {
         super.awakeFromNib()
         DispatchQueue.main.async {
             self.drawArcWithParams(plottingView: self, count: self.positiveNumbers-1, isClockWise: true)
@@ -70,8 +62,8 @@ class VennPieChartView: UIView {
         }
     }
     
-    //Drawing number Arc in given View clockwise or anticlockwise
-    func drawArcWithParams(plottingView: UIView, count: Int, isClockWise: Bool) {
+    /// Drawing number Arc in given View clockwise or anticlockwise
+    private func drawArcWithParams(plottingView: UIView, count: Int, isClockWise: Bool) {
         var dynamicRadious:CGFloat = 0.0
         var value = 9
         var greenValue = 105.0
@@ -79,7 +71,7 @@ class VennPieChartView: UIView {
         var blueValue = 57.0
         var arrLayers = [CAShapeLayer]()
         
-        for _ in 0...count{
+        for _ in 0...count {
             //Drawing unfilled Arcs
             let center = CGPoint (x: plottingView.frame.size.width / 2,
                                   y: plottingView.frame.size.height / 2)
@@ -138,7 +130,7 @@ class VennPieChartView: UIView {
         }
     }
     
-    func drawCurvedString(on layer: CALayer, text: NSAttributedString, angle: CGFloat, radius: CGFloat, plottingViwe: UIView, isClockwise: Bool) {
+    private func drawCurvedString(on layer: CALayer, text: NSAttributedString, angle: CGFloat, radius: CGFloat, plottingViwe: UIView, isClockwise: Bool) {
         var radAngle = angle.radians
         
         let perimeter: CGFloat = 2 * .pi * radius
@@ -185,7 +177,7 @@ class VennPieChartView: UIView {
         }
     }
     
-    func drawText(on layer: CALayer, text: NSAttributedString, frame: CGRect) -> CATextLayer {
+    private func drawText(on layer: CALayer, text: NSAttributedString, frame: CGRect) -> CATextLayer {
         let textLayer = CATextLayer()
         textLayer.frame = frame
         textLayer.string = text
@@ -193,5 +185,17 @@ class VennPieChartView: UIView {
         textLayer.alignmentMode = CATextLayerAlignmentMode.left
         textLayer.contentsScale = UIScreen.main.scale
         return textLayer
+    }
+}
+
+extension CGFloat {
+    /** Degrees to Radian **/
+    var degrees: CGFloat {
+        return self * (180.0 / .pi)
+    }
+    
+    /** Radians to Degrees **/
+    var radians: CGFloat {
+        return self / 180.0 * .pi
     }
 }
